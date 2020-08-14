@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "431209015820",
+    "firebase_url": "https://admob-app-id-8283634892.firebaseio.com",
+    "project_id": "admob-app-id-8283634892",
+    "storage_bucket": "admob-app-id-8283634892.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431209015820:android:cee08eb8d595e9d3",
+        "android_client_info": {
+          "package_name": "com.neptunedreams.vulcan.LevelOfVulcan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431209015820-rht2s2sbjb035l5vksfjfquoal6tqeei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwukZCNx0Ugmh61dLCzaUO7aI4jzUVOz0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

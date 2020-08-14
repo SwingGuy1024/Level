@@ -1,0 +1,11 @@
+<root>
+  <item name='com.codename1.ui.table.TableLayout com.codename1.ui.table.TableLayout.Constraint createConstraint()'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+  <item name='com.codename1.ui.table.TableLayout com.codename1.ui.table.TableLayout.Constraint createConstraint(int, int)'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+  <item name='com.codename1.ui.table.TableLayout.Constraint com.codename1.ui.table.TableLayout.Constraint horizontalAlign(int)'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+</root>

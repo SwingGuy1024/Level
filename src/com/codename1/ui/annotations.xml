@@ -1,0 +1,47 @@
+<root>
+  <item name='com.codename1.ui.Component com.codename1.ui.geom.Dimension getPreferredSize()'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+	<item name='com.codename1.ui.Component com.codename1.ui.geom.Rectangle getBounds()'>
+		<annotation name='com.neptunedreams.util.NotNull'/>
+	</item>
+	<item name='com.codename1.ui.Component com.codename1.ui.plaf.Style getAllStyles()'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+  <item name='com.codename1.ui.Component com.codename1.ui.plaf.Style getStyle()'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+  <item name='com.codename1.ui.Component com.codename1.ui.plaf.Style getUnselectedStyle()'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+	<item name='com.codename1.ui.Container com.codename1.ui.Component getComponentAt(int)'>
+		<annotation name='com.neptunedreams.util.NotNull'/>
+	</item>
+	<item name='com.codename1.ui.Form com.codename1.ui.MenuBar getMenuBar()'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+  <item name='com.codename1.ui.Image com.codename1.ui.Graphics getGraphics()'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+  <item name='com.codename1.ui.Image com.codename1.ui.Image applyMask(java.lang.Object)'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+  <item name='com.codename1.ui.Image com.codename1.ui.Image scaled(int, int)'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+	<item name='com.codename1.ui.Image com.codename1.ui.Image subImage(int, int, int, int, boolean)'>
+		<annotation name='com.neptunedreams.util.NotNull'/>
+	</item>
+	<item name='com.codename1.ui.Image int[] getRGB()'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+  <item name='com.codename1.ui.Image java.lang.Object createMask()'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+	<item name='com.codename1.ui.TextArea java.lang.String getText()'>
+		<annotation name='com.neptunedreams.util.NotNull'/>
+	</item>
+	<item name='com.codename1.ui.Transform float[] transformPoint(float[])'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+</root>

@@ -1,0 +1,17 @@
+<root>
+  <item name='com.codename1.ui.plaf.Style com.codename1.ui.Font getFont()'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+  <item name='com.codename1.ui.plaf.Style com.codename1.ui.Painter getBgPainter()'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+  <item name='com.codename1.ui.plaf.UIManager'>
+    <annotation name='org.jetbrains.annotations.NonNls'/>
+  </item>
+  <item name='com.codename1.ui.plaf.UIManager com.codename1.ui.plaf.Style getComponentStyle(java.lang.String)'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+  <item name='com.codename1.ui.plaf.UIManager com.codename1.ui.plaf.UIManager getInstance()'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+</root>

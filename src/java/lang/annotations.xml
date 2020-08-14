@@ -1,0 +1,44 @@
+<root>
+  <item name='java.lang.StringBuilder java.lang.StringBuilder append(boolean)'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+  <item name='java.lang.StringBuilder java.lang.StringBuilder append(char)'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+  <item name='java.lang.StringBuilder java.lang.StringBuilder append(char[])'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+  <item name='java.lang.StringBuilder java.lang.StringBuilder append(char[], int, int)'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+  <item name='java.lang.StringBuilder java.lang.StringBuilder append(double)'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+  <item name='java.lang.StringBuilder java.lang.StringBuilder append(float)'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+  <item name='java.lang.StringBuilder java.lang.StringBuilder append(int)'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+  <item name='java.lang.StringBuilder java.lang.StringBuilder append(java.lang.CharSequence)'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+  <item name='java.lang.StringBuilder java.lang.StringBuilder append(java.lang.CharSequence, int, int)'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+  <item name='java.lang.StringBuilder java.lang.StringBuilder append(java.lang.Object)'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+  <item name='java.lang.StringBuilder java.lang.StringBuilder append(java.lang.String)'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+  <item name='java.lang.StringBuilder java.lang.StringBuilder append(java.lang.StringBuffer)'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+  <item name='java.lang.StringBuilder java.lang.StringBuilder append(long)'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+  <item name='java.lang.StringBuilder java.lang.StringBuilder appendCodePoint(int)'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+</root>

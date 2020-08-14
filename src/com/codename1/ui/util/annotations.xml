@@ -1,0 +1,23 @@
+<root>
+  <item name='com.codename1.ui.util.Resources com.codename1.ui.Image getImage(java.lang.String)'>
+    <annotation name='com.neptunedreams.util.Nullable'/>
+  </item>
+  <item name='com.codename1.ui.util.Resources com.codename1.ui.Image getImage(java.lang.String) 0'>
+    <annotation name='org.jetbrains.annotations.NonNls'/>
+  </item>
+	<item name='com.codename1.ui.util.Resources com.codename1.ui.util.Resources open(java.lang.String, int)'>
+		<annotation name='com.neptunedreams.util.NotNull'/>
+	</item>
+	<item name='com.codename1.ui.util.Resources com.codename1.ui.util.Resources openLayered(java.lang.String)'>
+		<annotation name='com.neptunedreams.util.NotNull'/>
+	</item>
+	<item name='com.codename1.ui.util.Resources com.codename1.ui.util.Resources openLayered(java.lang.String, int)'>
+		<annotation name='com.neptunedreams.util.NotNull'/>
+	</item>
+	<item name='com.codename1.ui.util.Resources java.lang.String[] getMetaData()'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+	<item name='com.codename1.ui.util.Resources java.lang.String[] getThemeResourceNames()'>
+		<annotation name='com.neptunedreams.util.NotNull'/>
+	</item>
+</root>

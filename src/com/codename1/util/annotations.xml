@@ -1,0 +1,5 @@
+<root>
+  <item name='com.codename1.util.StringUtil java.lang.String replaceAll(java.lang.String, java.lang.String, java.lang.String)'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+</root>

@@ -1,0 +1,8 @@
+<root>
+  <item name='com.codename1.l10n.L10NManager java.lang.String format(double, int)'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+  <item name='com.codename1.l10n.L10NManager java.lang.String formatDateTime(java.util.Date)'>
+    <annotation name='com.neptunedreams.util.NotNull'/>
+  </item>
+</root>

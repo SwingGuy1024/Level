@@ -1,0 +1,1715 @@
+Crash Details: 
+Dalvik/2.1.0 (Linux; U; Android 5.1; XT1528 Build/LPIS23.29-17.5-2)
+Pixels Per Meter: 9449.0
+Pixels Per inch: 240.0
+Display 540 x 802 pixels
+approx  5.7 x 8.5 cm
+approx  2.2 x 3.3 inches
+Version 0.1
+Thread EDT (edt = true) of EDT of class com.codename1.impl.b
+[EDT] 0:0:0,0 - Codename One revisions: 29d54098cf72773156622963a15d678aa5f0cf9e
+2105
+
+[EDT] 0:0:0,4 - Log instance of class com.neptunedreams.vulcan.n$2
+[EDT] 0:0:0,541 - Locking to portrait
+[EDT] 0:0:0,659 - adPaddingBottom: null
+[EDT] 0:0:0,727 - Adding task 371882817 for 1 tasks.
+[EDT] 0:0:5,741 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:5,759 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:5,778 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:5,791 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:5,798 - ***
+*
+
+[EDT] 0:0:5,799 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:5,802 - Crash Details: 
+Dalvik/2.1.0 (Linux; U; Android 5.1; XT1528 Build/LPIS23.29-17.5-2)
+Pixels Per Meter: 9449.0
+Pixels Per inch: 240.0
+Display 540 x 802 pixels
+approx  5.7 x 8.5 cm
+approx  2.2 x 3.3 inches
+Version 0.1
+Thread EDT (edt = true) of EDT of class com.codename1.impl.b
+[EDT] 0:0:0,0 - Codename One revisions: 29d54098cf72773156622963a15d678aa5f0cf9e
+2105
+
+[EDT] 0:0:0,4 - Log instance of class com.neptunedreams.vulcan.n$2
+[EDT] 0:0:0,541 - Locking to portrait
+[EDT] 0:0:0,659 - adPaddingBottom: null
+[EDT] 0:0:0,727 - Adding task 371882817 for 1 tasks.
+[EDT] 0:0:5,741 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:5,759 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:5,778 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:5,791 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:5,798 - ***
+*
+
+[EDT] 0:0:5,799 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+(End of crash details.)
+
+Vulcan’s Level has crashed. We apologize for the inconvenience. Please provide any (optional) additional feedback below this line. Then please hit the send button. Thank you from NeptuneDreams.com
+[EDT] 0:0:10,617 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:10,634 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:10,644 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:10,645 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:10,657 - ***
+*
+
+[EDT] 0:0:10,658 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:10,665 - Crash Details: 
+Dalvik/2.1.0 (Linux; U; Android 5.1; XT1528 Build/LPIS23.29-17.5-2)
+Pixels Per Meter: 9449.0
+Pixels Per inch: 240.0
+Display 540 x 802 pixels
+approx  5.7 x 8.5 cm
+approx  2.2 x 3.3 inches
+Version 0.1
+Thread EDT (edt = true) of EDT of class com.codename1.impl.b
+[EDT] 0:0:0,0 - Codename One revisions: 29d54098cf72773156622963a15d678aa5f0cf9e
+2105
+
+[EDT] 0:0:0,4 - Log instance of class com.neptunedreams.vulcan.n$2
+[EDT] 0:0:0,541 - Locking to portrait
+[EDT] 0:0:0,659 - adPaddingBottom: null
+[EDT] 0:0:0,727 - Adding task 371882817 for 1 tasks.
+[EDT] 0:0:5,741 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:5,759 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:5,778 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:5,791 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:5,798 - ***
+*
+
+[EDT] 0:0:5,799 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:5,802 - Crash Details: 
+Dalvik/2.1.0 (Linux; U; Android 5.1; XT1528 Build/LPIS23.29-17.5-2)
+Pixels Per Meter: 9449.0
+Pixels Per inch: 240.0
+Display 540 x 802 pixels
+approx  5.7 x 8.5 cm
+approx  2.2 x 3.3 inches
+Version 0.1
+Thread EDT (edt = true) of EDT of class com.codename1.impl.b
+[EDT] 0:0:0,0 - Codename One revisions: 29d54098cf72773156622963a15d678aa5f0cf9e
+2105
+
+[EDT] 0:0:0,4 - Log instance of class com.neptunedreams.vulcan.n$2
+[EDT] 0:0:0,541 - Locking to portrait
+[EDT] 0:0:0,659 - adPaddingBottom: null
+[EDT] 0:0:0,727 - Adding task 371882817 for 1 tasks.
+[EDT] 0:0:5,741 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:5,759 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:5,778 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:5,791 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:5,798 - ***
+*
+
+[EDT] 0:0:5,799 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+(End of crash details.)
+
+Vulcan’s Level has crashed. We apologize for the inconvenience. Please provide any (optional) additional feedback below this line. Then please hit the send button. Thank you from NeptuneDreams.com
+[EDT] 0:0:10,617 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:10,634 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:10,644 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:10,645 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:10,657 - ***
+*
+
+[EDT] 0:0:10,658 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+(End of crash details.)
+
+Vulcan’s Level has crashed. We apologize for the inconvenience. Please provide any (optional) additional feedback below this line. Then please hit the send button. Thank you from NeptuneDreams.com
+[EDT] 0:0:15,515 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:15,524 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:15,532 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:15,533 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:15,535 - ***
+*
+
+[EDT] 0:0:15,537 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:15,545 - Crash Details: 
+Dalvik/2.1.0 (Linux; U; Android 5.1; XT1528 Build/LPIS23.29-17.5-2)
+Pixels Per Meter: 9449.0
+Pixels Per inch: 240.0
+Display 540 x 802 pixels
+approx  5.7 x 8.5 cm
+approx  2.2 x 3.3 inches
+Version 0.1
+Thread EDT (edt = true) of EDT of class com.codename1.impl.b
+[EDT] 0:0:0,0 - Codename One revisions: 29d54098cf72773156622963a15d678aa5f0cf9e
+2105
+
+[EDT] 0:0:0,4 - Log instance of class com.neptunedreams.vulcan.n$2
+[EDT] 0:0:0,541 - Locking to portrait
+[EDT] 0:0:0,659 - adPaddingBottom: null
+[EDT] 0:0:0,727 - Adding task 371882817 for 1 tasks.
+[EDT] 0:0:5,741 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:5,759 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:5,778 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:5,791 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:5,798 - ***
+*
+
+[EDT] 0:0:5,799 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:5,802 - Crash Details: 
+Dalvik/2.1.0 (Linux; U; Android 5.1; XT1528 Build/LPIS23.29-17.5-2)
+Pixels Per Meter: 9449.0
+Pixels Per inch: 240.0
+Display 540 x 802 pixels
+approx  5.7 x 8.5 cm
+approx  2.2 x 3.3 inches
+Version 0.1
+Thread EDT (edt = true) of EDT of class com.codename1.impl.b
+[EDT] 0:0:0,0 - Codename One revisions: 29d54098cf72773156622963a15d678aa5f0cf9e
+2105
+
+[EDT] 0:0:0,4 - Log instance of class com.neptunedreams.vulcan.n$2
+[EDT] 0:0:0,541 - Locking to portrait
+[EDT] 0:0:0,659 - adPaddingBottom: null
+[EDT] 0:0:0,727 - Adding task 371882817 for 1 tasks.
+[EDT] 0:0:5,741 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:5,759 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:5,778 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:5,791 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:5,798 - ***
+*
+
+[EDT] 0:0:5,799 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+(End of crash details.)
+
+Vulcan’s Level has crashed. We apologize for the inconvenience. Please provide any (optional) additional feedback below this line. Then please hit the send button. Thank you from NeptuneDreams.com
+[EDT] 0:0:10,617 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:10,634 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:10,644 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:10,645 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:10,657 - ***
+*
+
+[EDT] 0:0:10,658 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:10,665 - Crash Details: 
+Dalvik/2.1.0 (Linux; U; Android 5.1; XT1528 Build/LPIS23.29-17.5-2)
+Pixels Per Meter: 9449.0
+Pixels Per inch: 240.0
+Display 540 x 802 pixels
+approx  5.7 x 8.5 cm
+approx  2.2 x 3.3 inches
+Version 0.1
+Thread EDT (edt = true) of EDT of class com.codename1.impl.b
+[EDT] 0:0:0,0 - Codename One revisions: 29d54098cf72773156622963a15d678aa5f0cf9e
+2105
+
+[EDT] 0:0:0,4 - Log instance of class com.neptunedreams.vulcan.n$2
+[EDT] 0:0:0,541 - Locking to portrait
+[EDT] 0:0:0,659 - adPaddingBottom: null
+[EDT] 0:0:0,727 - Adding task 371882817 for 1 tasks.
+[EDT] 0:0:5,741 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:5,759 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:5,778 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:5,791 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:5,798 - ***
+*
+
+[EDT] 0:0:5,799 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:5,802 - Crash Details: 
+Dalvik/2.1.0 (Linux; U; Android 5.1; XT1528 Build/LPIS23.29-17.5-2)
+Pixels Per Meter: 9449.0
+Pixels Per inch: 240.0
+Display 540 x 802 pixels
+approx  5.7 x 8.5 cm
+approx  2.2 x 3.3 inches
+Version 0.1
+Thread EDT (edt = true) of EDT of class com.codename1.impl.b
+[EDT] 0:0:0,0 - Codename One revisions: 29d54098cf72773156622963a15d678aa5f0cf9e
+2105
+
+[EDT] 0:0:0,4 - Log instance of class com.neptunedreams.vulcan.n$2
+[EDT] 0:0:0,541 - Locking to portrait
+[EDT] 0:0:0,659 - adPaddingBottom: null
+[EDT] 0:0:0,727 - Adding task 371882817 for 1 tasks.
+[EDT] 0:0:5,741 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:5,759 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:5,778 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:5,791 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:5,798 - ***
+*
+
+[EDT] 0:0:5,799 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+(End of crash details.)
+
+Vulcan’s Level has crashed. We apologize for the inconvenience. Please provide any (optional) additional feedback below this line. Then please hit the send button. Thank you from NeptuneDreams.com
+[EDT] 0:0:10,617 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:10,634 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:10,644 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:10,645 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:10,657 - ***
+*
+
+[EDT] 0:0:10,658 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+(End of crash details.)
+
+Vulcan’s Level has crashed. We apologize for the inconvenience. Please provide any (optional) additional feedback below this line. Then please hit the send button. Thank you from NeptuneDreams.com
+[EDT] 0:0:15,515 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:15,524 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:15,532 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:15,533 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:15,535 - ***
+*
+
+[EDT] 0:0:15,537 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+(End of crash details.)
+
+Vulcan’s Level has crashed. We apologize for the inconvenience. Please provide any (optional) additional feedback below this line. Then please hit the send button. Thank you from NeptuneDreams.com
+[EDT] 0:0:19,526 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:19,529 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:19,533 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:19,535 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:19,537 - ***
+*
+
+[EDT] 0:0:19,539 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:19,550 - Crash Details: 
+Dalvik/2.1.0 (Linux; U; Android 5.1; XT1528 Build/LPIS23.29-17.5-2)
+Pixels Per Meter: 9449.0
+Pixels Per inch: 240.0
+Display 540 x 802 pixels
+approx  5.7 x 8.5 cm
+approx  2.2 x 3.3 inches
+Version 0.1
+Thread EDT (edt = true) of EDT of class com.codename1.impl.b
+[EDT] 0:0:0,0 - Codename One revisions: 29d54098cf72773156622963a15d678aa5f0cf9e
+2105
+
+[EDT] 0:0:0,4 - Log instance of class com.neptunedreams.vulcan.n$2
+[EDT] 0:0:0,541 - Locking to portrait
+[EDT] 0:0:0,659 - adPaddingBottom: null
+[EDT] 0:0:0,727 - Adding task 371882817 for 1 tasks.
+[EDT] 0:0:5,741 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:5,759 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:5,778 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:5,791 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:5,798 - ***
+*
+
+[EDT] 0:0:5,799 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:5,802 - Crash Details: 
+Dalvik/2.1.0 (Linux; U; Android 5.1; XT1528 Build/LPIS23.29-17.5-2)
+Pixels Per Meter: 9449.0
+Pixels Per inch: 240.0
+Display 540 x 802 pixels
+approx  5.7 x 8.5 cm
+approx  2.2 x 3.3 inches
+Version 0.1
+Thread EDT (edt = true) of EDT of class com.codename1.impl.b
+[EDT] 0:0:0,0 - Codename One revisions: 29d54098cf72773156622963a15d678aa5f0cf9e
+2105
+
+[EDT] 0:0:0,4 - Log instance of class com.neptunedreams.vulcan.n$2
+[EDT] 0:0:0,541 - Locking to portrait
+[EDT] 0:0:0,659 - adPaddingBottom: null
+[EDT] 0:0:0,727 - Adding task 371882817 for 1 tasks.
+[EDT] 0:0:5,741 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:5,759 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:5,778 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:5,791 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:5,798 - ***
+*
+
+[EDT] 0:0:5,799 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+(End of crash details.)
+
+Vulcan’s Level has crashed. We apologize for the inconvenience. Please provide any (optional) additional feedback below this line. Then please hit the send button. Thank you from NeptuneDreams.com
+[EDT] 0:0:10,617 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:10,634 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:10,644 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:10,645 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:10,657 - ***
+*
+
+[EDT] 0:0:10,658 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:10,665 - Crash Details: 
+Dalvik/2.1.0 (Linux; U; Android 5.1; XT1528 Build/LPIS23.29-17.5-2)
+Pixels Per Meter: 9449.0
+Pixels Per inch: 240.0
+Display 540 x 802 pixels
+approx  5.7 x 8.5 cm
+approx  2.2 x 3.3 inches
+Version 0.1
+Thread EDT (edt = true) of EDT of class com.codename1.impl.b
+[EDT] 0:0:0,0 - Codename One revisions: 29d54098cf72773156622963a15d678aa5f0cf9e
+2105
+
+[EDT] 0:0:0,4 - Log instance of class com.neptunedreams.vulcan.n$2
+[EDT] 0:0:0,541 - Locking to portrait
+[EDT] 0:0:0,659 - adPaddingBottom: null
+[EDT] 0:0:0,727 - Adding task 371882817 for 1 tasks.
+[EDT] 0:0:5,741 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:5,759 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:5,778 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:5,791 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:5,798 - ***
+*
+
+[EDT] 0:0:5,799 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:5,802 - Crash Details: 
+Dalvik/2.1.0 (Linux; U; Android 5.1; XT1528 Build/LPIS23.29-17.5-2)
+Pixels Per Meter: 9449.0
+Pixels Per inch: 240.0
+Display 540 x 802 pixels
+approx  5.7 x 8.5 cm
+approx  2.2 x 3.3 inches
+Version 0.1
+Thread EDT (edt = true) of EDT of class com.codename1.impl.b
+[EDT] 0:0:0,0 - Codename One revisions: 29d54098cf72773156622963a15d678aa5f0cf9e
+2105
+
+[EDT] 0:0:0,4 - Log instance of class com.neptunedreams.vulcan.n$2
+[EDT] 0:0:0,541 - Locking to portrait
+[EDT] 0:0:0,659 - adPaddingBottom: null
+[EDT] 0:0:0,727 - Adding task 371882817 for 1 tasks.
+[EDT] 0:0:5,741 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:5,759 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:5,778 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:5,791 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:5,798 - ***
+*
+
+[EDT] 0:0:5,799 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+(End of crash details.)
+
+Vulcan’s Level has crashed. We apologize for the inconvenience. Please provide any (optional) additional feedback below this line. Then please hit the send button. Thank you from NeptuneDreams.com
+[EDT] 0:0:10,617 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:10,634 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:10,644 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:10,645 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:10,657 - ***
+*
+
+[EDT] 0:0:10,658 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+(End of crash details.)
+
+Vulcan’s Level has crashed. We apologize for the inconvenience. Please provide any (optional) additional feedback below this line. Then please hit the send button. Thank you from NeptuneDreams.com
+[EDT] 0:0:15,515 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:15,524 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:15,532 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:15,533 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:15,535 - ***
+*
+
+[EDT] 0:0:15,537 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:15,545 - Crash Details: 
+Dalvik/2.1.0 (Linux; U; Android 5.1; XT1528 Build/LPIS23.29-17.5-2)
+Pixels Per Meter: 9449.0
+Pixels Per inch: 240.0
+Display 540 x 802 pixels
+approx  5.7 x 8.5 cm
+approx  2.2 x 3.3 inches
+Version 0.1
+Thread EDT (edt = true) of EDT of class com.codename1.impl.b
+[EDT] 0:0:0,0 - Codename One revisions: 29d54098cf72773156622963a15d678aa5f0cf9e
+2105
+
+[EDT] 0:0:0,4 - Log instance of class com.neptunedreams.vulcan.n$2
+[EDT] 0:0:0,541 - Locking to portrait
+[EDT] 0:0:0,659 - adPaddingBottom: null
+[EDT] 0:0:0,727 - Adding task 371882817 for 1 tasks.
+[EDT] 0:0:5,741 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:5,759 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:5,778 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:5,791 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:5,798 - ***
+*
+
+[EDT] 0:0:5,799 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:5,802 - Crash Details: 
+Dalvik/2.1.0 (Linux; U; Android 5.1; XT1528 Build/LPIS23.29-17.5-2)
+Pixels Per Meter: 9449.0
+Pixels Per inch: 240.0
+Display 540 x 802 pixels
+approx  5.7 x 8.5 cm
+approx  2.2 x 3.3 inches
+Version 0.1
+Thread EDT (edt = true) of EDT of class com.codename1.impl.b
+[EDT] 0:0:0,0 - Codename One revisions: 29d54098cf72773156622963a15d678aa5f0cf9e
+2105
+
+[EDT] 0:0:0,4 - Log instance of class com.neptunedreams.vulcan.n$2
+[EDT] 0:0:0,541 - Locking to portrait
+[EDT] 0:0:0,659 - adPaddingBottom: null
+[EDT] 0:0:0,727 - Adding task 371882817 for 1 tasks.
+[EDT] 0:0:5,741 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:5,759 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:5,778 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:5,791 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:5,798 - ***
+*
+
+[EDT] 0:0:5,799 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+(End of crash details.)
+
+Vulcan’s Level has crashed. We apologize for the inconvenience. Please provide any (optional) additional feedback below this line. Then please hit the send button. Thank you from NeptuneDreams.com
+[EDT] 0:0:10,617 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:10,634 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:10,644 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:10,645 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:10,657 - ***
+*
+
+[EDT] 0:0:10,658 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:10,665 - Crash Details: 
+Dalvik/2.1.0 (Linux; U; Android 5.1; XT1528 Build/LPIS23.29-17.5-2)
+Pixels Per Meter: 9449.0
+Pixels Per inch: 240.0
+Display 540 x 802 pixels
+approx  5.7 x 8.5 cm
+approx  2.2 x 3.3 inches
+Version 0.1
+Thread EDT (edt = true) of EDT of class com.codename1.impl.b
+[EDT] 0:0:0,0 - Codename One revisions: 29d54098cf72773156622963a15d678aa5f0cf9e
+2105
+
+[EDT] 0:0:0,4 - Log instance of class com.neptunedreams.vulcan.n$2
+[EDT] 0:0:0,541 - Locking to portrait
+[EDT] 0:0:0,659 - adPaddingBottom: null
+[EDT] 0:0:0,727 - Adding task 371882817 for 1 tasks.
+[EDT] 0:0:5,741 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:5,759 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:5,778 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:5,791 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:5,798 - ***
+*
+
+[EDT] 0:0:5,799 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:5,802 - Crash Details: 
+Dalvik/2.1.0 (Linux; U; Android 5.1; XT1528 Build/LPIS23.29-17.5-2)
+Pixels Per Meter: 9449.0
+Pixels Per inch: 240.0
+Display 540 x 802 pixels
+approx  5.7 x 8.5 cm
+approx  2.2 x 3.3 inches
+Version 0.1
+Thread EDT (edt = true) of EDT of class com.codename1.impl.b
+[EDT] 0:0:0,0 - Codename One revisions: 29d54098cf72773156622963a15d678aa5f0cf9e
+2105
+
+[EDT] 0:0:0,4 - Log instance of class com.neptunedreams.vulcan.n$2
+[EDT] 0:0:0,541 - Locking to portrait
+[EDT] 0:0:0,659 - adPaddingBottom: null
+[EDT] 0:0:0,727 - Adding task 371882817 for 1 tasks.
+[EDT] 0:0:5,741 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:5,759 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:5,778 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:5,791 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:5,798 - ***
+*
+
+[EDT] 0:0:5,799 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+(End of crash details.)
+
+Vulcan’s Level has crashed. We apologize for the inconvenience. Please provide any (optional) additional feedback below this line. Then please hit the send button. Thank you from NeptuneDreams.com
+[EDT] 0:0:10,617 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:10,634 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:10,644 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:10,645 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:10,657 - ***
+*
+
+[EDT] 0:0:10,658 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+(End of crash details.)
+
+Vulcan’s Level has crashed. We apologize for the inconvenience. Please provide any (optional) additional feedback below this line. Then please hit the send button. Thank you from NeptuneDreams.com
+[EDT] 0:0:15,515 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:15,524 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:15,532 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:15,533 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:15,535 - ***
+*
+
+[EDT] 0:0:15,537 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+(End of crash details.)
+
+Vulcan’s Level has crashed. We apologize for the inconvenience. Please provide any (optional) additional feedback below this line. Then please hit the send button. Thank you from NeptuneDreams.com
+[EDT] 0:0:19,526 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:19,529 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:19,533 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:19,535 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:19,537 - ***
+*
+
+[EDT] 0:0:19,539 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+(End of crash details.)
+
+Vulcan’s Level has crashed. We apologize for the inconvenience. Please provide any (optional) additional feedback below this line. Then please hit the send button. Thank you from NeptuneDreams.com
+[EDT] 0:0:22,979 - java.lang.RuntimeException: Dummy Exception
+[EDT] 0:0:22,981 - java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+[EDT] 0:0:22,993 - 
+***
+* LogThrowable Called from 
+[EDT] 0:0:22,994 - Exception: java.lang.Error - Dummy
+java.lang.Error: Dummy
+at com.neptunedreams.vulcan.n$2.b(LevelOfVulcan.java:349)
+at com.codename1.e.l.a(Log.java:293)
+at com.neptunedreams.a.e.a(ReportToDeveloper.java:192)
+at com.codename1.impl.b.b(CodenameOneThread.java:201)
+at com.codename1.m.m.i(Display.java:1004)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+[EDT] 0:0:22,996 - ***
+*
+
+[EDT] 0:0:22,997 - Exception: java.lang.RuntimeException - Dummy Exception
+java.lang.RuntimeException: Dummy Exception
+at com.neptunedreams.vulcan.q.a(SensorForm.java:158)
+at com.neptunedreams.vulcan.q.a(SensorForm.java)
+at com.neptunedreams.vulcan.s.a(Unknown Source)
+at com.codename1.k.c.b(SensorsManager.java:164)
+at com.codename1.k.c.a(SensorsManager.java)
+at com.codename1.k.d.run(Unknown Source)
+at com.codename1.m.m.l(Display.java:1152)
+at com.codename1.m.m.j(Display.java:1096)
+at com.codename1.m.m.i(Display.java:997)
+at com.codename1.m.ac.run(RunnableWrapper.java:120)
+at com.codename1.impl.b$1.run(CodenameOneThread.java:60)
+at java.lang.Thread.run(Thread.java:818)
+
+(End of crash details.)
+
+Vulcan’s Level has crashed. We apologize for the inconvenience. Please provide any (optional) additional feedback below this line. Then please hit the send button. Thank you from NeptuneDreams.com
