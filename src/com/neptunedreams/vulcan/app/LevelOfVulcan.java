@@ -3,10 +3,8 @@ package com.neptunedreams.vulcan.app;
 import java.util.Hashtable;
 import com.codename1.io.Log;
 import com.codename1.io.Preferences;
-import com.codename1.payment.Purchase;
 import com.codename1.payment.PurchaseCallback;
 import com.codename1.sensors.SensorsManager;
-import com.codename1.system.NativeLookup;
 import com.codename1.ui.Dialog;
 import com.codename1.ui.Display;
 import com.codename1.ui.Form;
@@ -14,8 +12,6 @@ import com.codename1.ui.Toolbar;
 import com.codename1.ui.plaf.UIManager;
 import com.codename1.ui.util.Resources;
 import com.codename1.util.MathUtil;
-import com.neptunedreams.util.Nullable;
-import com.neptunedreams.util.ProductTestNative;
 import com.neptunedreams.vulcan.BubbleForm;
 import com.neptunedreams.vulcan.SensorForm;
 import com.neptunedreams.vulcan.calibrate.CalibrationData.View;
@@ -199,49 +195,6 @@ public class LevelOfVulcan implements PurchaseCallback
 	private static final String OS_NAME = System.getProperty("os.name");
 	public static final String BUBBLE_FORM = "BUBBLE_FORM";
 	
-	@Nullable
-	private static final ProductTestNative productTest = createProductTest(isSimulation());
-
-	@Nullable
-	private static ProductTestNative createProductTest(boolean simulate) {
-		if (simulate) {
-			return simulateProductTest();
-		}
-		if (productTest == null) {
-			return NativeLookup.create(ProductTestNative.class);
-		}
-		return productTest;
-	}
-
-	private static ProductTestNative simulateProductTest() {
-		return new ProductTestNative() {
-			@Override
-			public String getPurchaseTestId() {
-				return "Dummy";
-			}
-
-			@Override
-			public String getCanceledTestId() {
-				return "DummyCanceled";
-			}
-
-			@Override
-			public String getRefundedTestId() {
-				return "DummyRefunded";
-			}
-
-			@Override
-			public String getUnavailableTestId() {
-				return "DummyUnavailable";
-			}
-
-			@Override
-			public boolean isSupported() {
-				return false;
-			}
-		};
-	}
-
 	@SuppressWarnings("unused")
 	public void init(Object context) {
 		
@@ -257,7 +210,7 @@ public class LevelOfVulcan implements PurchaseCallback
 
 		//		DefaultCrashReporter.init(true, 0);
 		enableEmailCrashReporting();
-		checkForPaidUpgrade();
+//		checkForPaidUpgrade();
 		//noinspection AssignmentToStaticFieldFromInstanceMethod
 		installationId=loadInstallationId();
 		String initialTheme = "Theme 1";
@@ -490,13 +443,7 @@ public class LevelOfVulcan implements PurchaseCallback
 		if (current == null) {
 			if (display.canForceOrientation()) {
 				display.lockOrientation(true);
-//				Log.p("Locking to portrait");
-//			} else {
-//				Log.p("Orientation Lock unavailable.");
 			}
-//			display.setCommandBehavior(Display.COMMAND_BEHAVIOR_NATIVE);
-			display.setCommandBehavior(Display.COMMAND_BEHAVIOR_SIDE_NAVIGATION);
-
 			SensorsManager acceleratorSensor = SensorsManager.getSenorsManager(accelerometer);
 			acceleratorSensor.setInterval(FRAME_RATE_MILLIS);
 
@@ -578,9 +525,9 @@ public class LevelOfVulcan implements PurchaseCallback
 				private int bigIndex = 0;
 				private static final int positions = 160;
 //				private long prevTime = 0;
-				private float pythagorTheta = (float) MathUtil.atan(f_3_over_4);
-				private float pX = g * (float) Math.sin(pythagorTheta);
-				private float pY = g * (float) Math.cos(pythagorTheta);
+				private final float pythagorTheta = (float) MathUtil.atan(f_3_over_4);
+				private final float pX = g * (float) Math.sin(pythagorTheta);
+				private final float pY = g * (float) Math.cos(pythagorTheta);
 //				private float pZ = g * 
 
 				@Override
@@ -730,20 +677,6 @@ public class LevelOfVulcan implements PurchaseCallback
 
 	}
 	
-	private void checkForPaidUpgrade() {
-		boolean showAds = !Prefs.prefs.get(Prefs.AD_FREE, false);
-		if (showAds && (productTest != null)) {
-			Purchase purchase = Purchase.getInAppPurchase();
-			if (purchase.isItemListingSupported()) {
-//				ProductTestNative productTest = 
-				boolean purchased = purchase.wasPurchased(productTest.getPurchaseTestId());
-				if (purchased) {
-					Prefs.prefs.set(Prefs.AD_FREE, true);
-				}
-			}
-		}
-	}
-
 	@SuppressWarnings("unused")
 	public void destroy() {
 		Log.p("Calling Destroy() on for " + Display.getInstance().getCurrent().getTitle());

@@ -1,5 +1,6 @@
 package com.neptunedreams.vulcan.calibrate;
 
+import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.Map;
 import com.codename1.io.Log;
@@ -50,7 +51,7 @@ public final class CalibrationData {
 	//	private Vector3D correctionVector;
 	private double[] correctionMatrix = {1.0, 0, 0, 0, 1.0, 0, 0, 0, 1.0};
 	@NotNull
-	private static final Map<View, CalibrationData> calibrationMap = new HashMap<>();
+	private static final Map<View, CalibrationData> calibrationMap = new EnumMap<>(View.class);
 
 	@NotNull
 	private final Statistics3D stats = new Statistics3D();
@@ -357,8 +358,7 @@ public final class CalibrationData {
 		broadcaster.addSensorObserver(SensorType3D.accelerometer, observer);
 
 		// Constants: for the duration of the stable threshold, 1000 ms/second, 5 samples per second.
-		int durationMs = (2 * (filterX.getStableThreshold()) * 1000) / 5; // Debug Only: Make this over 5, not 50. 
-//		activeTimer = stopTimer;
+		int durationMs = (2 * (filterX.getStableThreshold()) * 1000) / 5; // 50 for Debug Only: Make this 5 in Prod. 
 
 		stageSlider.setMaxValue(durationMs);
 		long startTime = System.currentTimeMillis();
@@ -373,16 +373,13 @@ public final class CalibrationData {
 			}
 		};
 		sliderTimer = new UITimer(progressTask);
-		final int FPS_20 = 50;
+		final int FPS_20 = 50; // 50 ms delay gives us 20 frames per second
 		final Form form = Display.getInstance().getCurrent();
 		assert form != null;
 		sliderTimer.schedule(FPS_20, true, form);
 		UITimer stopTimer = new UITimer(() -> {
 			broadcaster.removeSensorObserver(SensorType3D.accelerometer, observer);
 			gravityVector = stats.getMean();
-//			Log.p("Gravity: " + gravityVector.toShortString());
-			//noinspection ObjectToString
-//			Log.p("Setting vector from " + CalibrationData.this + " values " + gravityVector + " calculated from " + stats.getCount() + " points.");
 			if (finish != null) {
 				finish.run();
 			}

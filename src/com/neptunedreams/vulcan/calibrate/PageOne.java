@@ -48,7 +48,7 @@ public class PageOne extends SensorForm {
 		this.calibrationData = view.getCalibrationData();
 		//noinspection StringConcatenation
 		SpanLabel label = new SpanLabel("Place your device on a firm, stable, non-metallic surface. The surface need " +
-				"not be level. Then press the Stage One button.");
+				"not be exactly level. Then press the Stage One button.");
 		TableLayout.Constraint horCenter = new TableLayout.Constraint().horizontalAlign(CENTER);
 		add(horCenter, label);
 
@@ -65,13 +65,6 @@ public class PageOne extends SensorForm {
 		stageLabel.setHidden(true);
 		stageLabel.getAllStyles().setAlignment(CENTER);
 		stageSlider.setHidden(true);
-//		stageSlider.setUnselectedStyle();
-//		setTransitionInAnimator(CommonTransitions.createSlide(CommonTransitions.SLIDE_HORIZONTAL, false, 100));
-//		Transition out = getTransitionOutAnimator();
-//		Transition in = getTransitionInAnimator();
-//		Log.p("In transition:  " + ((in == null) ? "null" : (in.getClass().toString() + in.toString())));
-//		Log.p("Out transition: " + ((out == null) ? "null" : (out.getClass().toString() + out.toString())));
-//		setTransitionOutAnimator(null);
 	}
 
 	private void startStageOne(@NotNull final View view) {
@@ -79,11 +72,11 @@ public class PageOne extends SensorForm {
 		stageLabel.setText(STABILIZING_THE_DEVICE);
 		stageLabel.setHidden(false);
 		stageSlider.setHidden(false);
-		repaint();
+		show(); // repaint() didn't work well here.
 
-		// put in a 1/4 second delay
+		// put in a 1/4 second delay to give the user time to remove their finger.
 		UITimer timer = new UITimer(() -> startData(view));
-		final int quarterSecond = 500; // TODO: Change back to 250
+		final int quarterSecond = 250; // TODO: Change back to 250
 		timer.schedule(quarterSecond, false, PageOne.this);
 		activeTimer = timer;
 	}

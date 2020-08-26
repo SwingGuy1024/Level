@@ -34,13 +34,18 @@ import static com.codename1.sensors.SensorType3D.*;
  */
 public class PageTwo extends SensorForm {
 	private static final int HALF_SECOND = 500;
-	private Image rotatingPhone;
+	private final Image rotatingPhone;
 	private final Label blankLabel;
 	private final AnimatingLabel phoneLabel;
 	@NotNull
 	private final Label stageLabel;
 	@NotNull
-	private final Slider stageSlider = new Slider();
+	private final Slider stageSlider = new Slider() {
+		@Override
+		public void paint(final Graphics g) {
+			paintUpsideDown(g, this, () -> super.paint(g));
+		}
+	};
 	@NotNull
 	private final CalibrationData priorData;
 	private static final double RADIANS = Math.PI / 180.0;
@@ -97,7 +102,14 @@ public class PageTwo extends SensorForm {
 		message.setTextBlockAlign(Component.CENTER);
 		add(getConstraint(++row), message);
 
-		Button next = new Button("Stage Two");
+		Button next = new Button("Stage Two") {
+			// Print the button text upside-down
+			@Override
+			public void paint(final Graphics g) {
+				paintUpsideDown(g, this, () -> super.paint(g));
+			}
+		};
+
 		FontImage.setMaterialIcon(next, FontImage.MATERIAL_BUILD);
 		next.addActionListener(evt -> startStageTwo(view));
 		add(getConstraint(++row), next);
@@ -108,11 +120,31 @@ public class PageTwo extends SensorForm {
 
 		add(getConstraint(++row), new Label(" ")); // span
 
-		stageLabel = new Label("    Stabilizing    ");
-		add(getConstraint(++row), stageLabel);
+		stageLabel = new Label("    Stabilizing    ") {
+			@Override
+			public void paint(final Graphics g) {
+				paintUpsideDown(g, this, () -> super.paint(g));
+			}
+		};
 		add(getConstraint(++row), stageSlider);
+		add(getConstraint(++row), stageLabel);
 		stageLabel.setHidden(true);
 		stageSlider.setHidden(true);
+	}
+
+	/**
+	 * Paint the component upside down, using the provided painter. Strangely, this works fine for Labels and Buttons, 
+	 * but fails for Sliders.
+	 * @param g Graphics
+	 * @param cmp Component
+	 * @param painter Runnable that paints. Usually this is 
+	 */
+	private void paintUpsideDown(final Graphics g, Component cmp, Runnable painter) {
+		Transform savedTransform = Transform.makeScale(1.0f, 1.0f);
+		g.getTransform(savedTransform);
+		g.rotateRadians((float) Math.PI, cmp.getX() + cmp.getWidth() / 2, cmp.getY() + cmp.getHeight() / 2);
+		painter.run();
+		g.setTransform(savedTransform);
 	}
 
 	@NotNull
@@ -148,14 +180,13 @@ public class PageTwo extends SensorForm {
 		stageLabel.setText(PageOne.STABILIZING_THE_DEVICE);
 		stageLabel.setHidden(false);
 		stageSlider.setHidden(false);
-		repaint();
+		show(); // repaint() didn't work well here on PageOne. show() works fine.
 
 		// put in a 1/4 second delay
 		CalibrationData calibrationData = new CalibrationData(view);
 		UITimer timer = new UITimer(() -> startData(calibrationData, view));
-		final int quarterSecond = 500;
+		final int quarterSecond = 250;
 		timer.schedule(quarterSecond, false, this);
-//		activeTimer = timer;
 	}
 	
 	private void startData(@NotNull CalibrationData calibrationData, @NotNull View view) {

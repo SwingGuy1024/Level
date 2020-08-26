@@ -2,6 +2,9 @@ package com.neptunedreams.vulcan.settings;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.nio.charset.StandardCharsets;
 import java.util.LinkedList;
 import java.util.List;
 import com.codename1.components.MultiButton;
@@ -25,6 +28,7 @@ import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.layouts.FlowLayout;
 import com.codename1.ui.plaf.Style;
 import com.codename1.ui.plaf.UIManager;
+import com.codename1.ui.util.Resources;
 import com.neptunedreams.vulcan.BubbleForm;
 import com.neptunedreams.vulcan.app.LevelOfVulcan;
 import com.neptunedreams.vulcan.calibrate.CalibrationData;
@@ -300,7 +304,7 @@ public final class Commands {
 			InputStream i = getLicenseStream()
 		) {
 			while (count >= 0) {
-				builder.append(new String(byteBuf, 0, count, "UTF-8"));
+				builder.append(new String(byteBuf, 0, count, StandardCharsets.UTF_8));
 				count = i.read(byteBuf, 0, size);
 			}
 			String licenseAgreement = builder.toString();
