@@ -2,7 +2,6 @@ package com.neptunedreams.vulcan.settings;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.charset.StandardCharsets;
 import java.util.LinkedList;
 import java.util.List;
 import com.codename1.components.MultiButton;
@@ -300,7 +299,8 @@ public final class Commands {
 			InputStream i = getLicenseStream()
 		) {
 			while (count >= 0) {
-				builder.append(new String(byteBuf, 0, count, StandardCharsets.UTF_8)); // "UTF-8"
+				//noinspection CharsetObjectCanBeUsed
+				builder.append(new String(byteBuf, 0, count, "UTF-8")); // "UTF-8"
 				count = i.read(byteBuf, 0, size);
 			}
 			String licenseAgreement = builder.toString();
