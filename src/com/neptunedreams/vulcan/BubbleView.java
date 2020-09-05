@@ -70,22 +70,21 @@ public class BubbleView extends Component implements LevelModelListener, Prefere
 
 	// can't be turned into a local variable or it will get garbage collected!
 	@SuppressWarnings("FieldCanBeLocal")
-	private PreferenceListener accuracyListener;
+	private final PreferenceListener accuracyListener;
 
 	@NotNull
 	private final List<AngleChangedListener> angleChangedListenerList = new LinkedList<>();
 
-	//	private static final double R_SQUARED = RtAngle * RtAngle;
-	@SuppressWarnings("NullableProblems")
+	@SuppressWarnings("NotNullFieldNotInitialized")
 	@NotNull
 	private Image bubbleImage;
-	@SuppressWarnings("NullableProblems")
+	@SuppressWarnings("NotNullFieldNotInitialized")
 	@NotNull
 	private Image domeImage;
-	@SuppressWarnings("NullableProblems")
+	@SuppressWarnings("NotNullFieldNotInitialized")
 	@NotNull
 	private Image sideBubbleImage;
-	@SuppressWarnings("NullableProblems")
+	@SuppressWarnings("NotNullFieldNotInitialized")
 	@NotNull
 	private Image tubeImage;
 	
@@ -129,9 +128,9 @@ public class BubbleView extends Component implements LevelModelListener, Prefere
 	private Angle fullAngle = new Angle(0.0);
 	private float tiltRadians;
 	@NotNull
-	private VariableRateDigitalFilter directionFilter = new VariableRateDigitalFilter(0.1f, 200, 20);
+	private final VariableRateDigitalFilter directionFilter = new VariableRateDigitalFilter(0.1f, 200, 20);
 	@NotNull
-	private VariableRateDigitalFilter alternateDirectionFilter = new VariableRateDigitalFilter(0.1f, 200, 20);
+	private final VariableRateDigitalFilter alternateDirectionFilter = new VariableRateDigitalFilter(0.1f, 200, 20);
 	@NotNull
 	private final Font labelFont;
 	public static final double OUTER_DIAMETER_FRACTION = 0.90;
@@ -269,7 +268,6 @@ public class BubbleView extends Component implements LevelModelListener, Prefere
 //			Log.p("bv: reviseScreenDimensions 1: " + screenDimension);
 //			priorDimension = screenDimension;
 //		}
-		//noinspection ConstantConditions
 		if (screenDimension.getWidth() > screenDimension.getHeight()) {
 //			Log.p("reviseScreenDimension: " + screenDimension);
 			Dimension revisedDimension = BubbleForm.getScreenDimensions();
@@ -569,7 +567,6 @@ public class BubbleView extends Component implements LevelModelListener, Prefere
 
 	@NotNull
 	private Image createTubeImage(int color, int diameter, int width) {
-		//noinspection UnnecessaryLocalVariable
 		int gradientStart = darken(color, 25);
 		int gradientEnd = lighten(color, 30);
 		int delta = gradientEnd - gradientStart;
@@ -621,6 +618,7 @@ public class BubbleView extends Component implements LevelModelListener, Prefere
 		return 0xFF000000 | (parts[0] << 16) | (parts[1] << 8) | parts[2];
 	}
 
+	@SuppressWarnings("SameParameterValue")
 	private static int darken(int color, int percent) {
 		doAssert(percent <= 100);
 		doAssert(percent >= 0);
@@ -668,7 +666,8 @@ public class BubbleView extends Component implements LevelModelListener, Prefere
 				| (grayLightenPrimary((color & 0xFF00) >> 8, percentRemaining) << 8)
 				| (grayLightenPrimary(color & 0xFF, percentRemaining));
 	}
-	
+
+	@SuppressWarnings("SameParameterValue")
 	@NotNull
 	private Image createBubbleImage(int diameter, int bubbleColor, int bubbleRimColor, boolean centered) {
 		final int width = diameter + (2 * bubblePad);
@@ -1063,7 +1062,7 @@ public class BubbleView extends Component implements LevelModelListener, Prefere
 			drawCross(g, log, model.getDbgUncorrectedValue(), 0, "uc");  // black  Uncorrected value
 //		drawCross(g, log, value, 0, "cv");                           // black  corrected value
 //			drawCross(g, log, data.getOldCorrectionVector(), 0x7f00, "oC"); // old correction
-			drawCross(g, log, data.oldCorrect(model.getDbgUncorrectedValue()), 0x3f3f3f, "oN", true); // old correction
+//			drawCross(g, log, data.oldCorrect(model.getDbgUncorrectedValue()), 0x3f3f3f, "oN", true); // old correction
 			drawCross(g, log, value, 0x3f3f3f, "Vl");
 		}
 
@@ -1143,14 +1142,14 @@ public class BubbleView extends Component implements LevelModelListener, Prefere
 		g.setTransform(savedTransform); // unRotate
 	}
 
-	private void drawCross(@NotNull Graphics g, boolean log, @Nullable Vector3D point, int color, @SuppressWarnings("UnusedParameters") @NotNull String txt) {
-		drawCross(g, log, point, color, txt, false);
+	private void drawCross(@NotNull Graphics g, boolean logIt, @Nullable Vector3D point, int color, @SuppressWarnings("UnusedParameters") @NotNull String txt) {
+		drawCross(g, logIt, point, color, txt, false);
 	}
 	
 	// NO CONTRACT ALLOWED! This is just to suppress warnings.
 	private boolean isTrue() { return true; }
 
-	private boolean log = !isTrue();
+	private final boolean log = !isTrue();
 
 //	@SuppressWarnings("MismatchedQueryAndUpdateOfCollection")
 //	@NotNull
@@ -1163,11 +1162,12 @@ public class BubbleView extends Component implements LevelModelListener, Prefere
 //		logSet.add("oN");
 //	}
 
-	private void drawCross(@NotNull Graphics g, 
-	                       @SuppressWarnings("UnusedParameters") boolean log, 
-	                       @Nullable Vector3D point, 
-	                       int color, 
-	                       @SuppressWarnings("UnusedParameters") String txt, 
+	@SuppressWarnings("SameParameterValue")
+	private void drawCross(@NotNull Graphics g,
+	                       @SuppressWarnings("UnusedParameters") boolean logIt,
+	                       @Nullable Vector3D point,
+	                       int color,
+	                       @SuppressWarnings("UnusedParameters") String txt,
 	                       boolean _x) {
 		if (debug) {
 			if (point != null) {
@@ -1175,7 +1175,7 @@ public class BubbleView extends Component implements LevelModelListener, Prefere
 				g.setColor(color);
 				final int x = (int) ((cross.getX() * bubbleRange) + 0.5);
 				final int y = (int) ((cross.getY() * bubbleRange) + 0.5);
-	//			if (log && logSet.contains(txt)) {
+	//			if (logIt && logSet.contains(txt)) {
 	//				Log.p("* * * Cross " + txt + " at (" + x + ", " + y + ") from " + point + " value: " + value.getX() + ", " + value.getY());
 	//			}
 				g.translate(x, y);
@@ -1234,8 +1234,8 @@ public class BubbleView extends Component implements LevelModelListener, Prefere
 	// -x, -y, x axis: -> -wide, -high
 	// -x, -y, y axis: -> -wide, -high
 	@Override
-	public void valueChanged(@NotNull Vector3D value, @NotNull Vector3D uncorrectedValue) {
-		this.value = value;
+	public void valueChanged(@NotNull Vector3D theValue, @NotNull Vector3D uncorrectedValue) {
+		value = theValue;
 		// We need to get the orientation from the uncorrected value, because the corrected value could flip it into another
 		// view, which (if uncorrected) will then flip it right back. So it will flicker between two views.
 		currentView = OrientationLock.lock.getOrientation(uncorrectedValue);
@@ -1246,6 +1246,7 @@ public class BubbleView extends Component implements LevelModelListener, Prefere
 	
 	@Override
 	protected void initComponent() {
+		super.initComponent();
 //		Log.p("BubbleView.initComponent()");
 		Prefs.prefs.addPreferenceListener(Prefs.AXIS_INDICATORS, this);
 		axisPref = Prefs.prefs.get(Prefs.AXIS_INDICATORS, true);
@@ -1253,6 +1254,7 @@ public class BubbleView extends Component implements LevelModelListener, Prefere
 
 	@Override
 	protected void deinitialize() {
+		super.deinitialize();
 //		Log.p("BubbleView.deinitialize()");
 		Prefs.prefs.removePreferenceListener(Prefs.AXIS_INDICATORS, this);
 	}

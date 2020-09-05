@@ -65,6 +65,54 @@ public class RotatedLabel extends Label {
 	}
 
 	@Override
+	public int getPreferredW() {
+		if (inverted) {
+			return super.getPreferredW();
+		} else {
+			return super.getPreferredH();
+		}
+	}
+
+	@Override
+	public int getPreferredH() {
+		if (inverted) {
+			return super.getPreferredH();
+		} else {
+			return super.getPreferredW();
+		}
+	}
+
+	@Override
+	public void setWidth(final int width) {
+		if (inverted) {
+			super.setWidth(width);
+		} else {
+			//noinspection SuspiciousNameCombination
+			super.setHeight(width);
+		}
+	}
+
+	@Override
+	public void setHeight(final int height) {
+		if (inverted) {
+			super.setHeight(height);
+		} else {
+			//noinspection SuspiciousNameCombination
+			super.setWidth(height);
+		}
+	}
+
+	@Override
+	public void setSize(final Dimension d) {
+		if (inverted) {
+			super.setSize(d);
+		} else {
+			super.setSize(new Dimension(d.getHeight(), d.getWidth()));
+		}
+	}
+
+	@SuppressWarnings("MethodDoesntCallSuperMethod")
+	@Override
 	public void paint(@NotNull final Graphics g) {
 		g.translate(getX(), getY());
 		try {

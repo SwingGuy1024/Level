@@ -2,13 +2,12 @@ package com.neptunedreams.vulcan.settings;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
 import java.util.LinkedList;
 import java.util.List;
 import com.codename1.components.MultiButton;
 import com.codename1.io.Log;
+import com.codename1.io.Util;
 import com.codename1.payment.Purchase;
 import com.codename1.ui.BrowserComponent;
 import com.codename1.ui.Button;
@@ -28,7 +27,6 @@ import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.layouts.FlowLayout;
 import com.codename1.ui.plaf.Style;
 import com.codename1.ui.plaf.UIManager;
-import com.codename1.ui.util.Resources;
 import com.neptunedreams.vulcan.BubbleForm;
 import com.neptunedreams.vulcan.app.LevelOfVulcan;
 import com.neptunedreams.vulcan.calibrate.CalibrationData;
@@ -40,9 +38,9 @@ import com.neptunedreams.util.Nullable;
 import com.neptunedreams.util.ReportToDeveloper;
 import com.neptunedreams.vulcan.ui.FormNavigator;
 
-import static com.codename1.ui.Component.CENTER;
-import static com.neptunedreams.vulcan.app.LevelOfVulcan.debug;
-import static com.neptunedreams.vulcan.settings.Commands.TestPurchase.purchase;
+import static com.codename1.ui.Component.*;
+import static com.neptunedreams.vulcan.app.LevelOfVulcan.*;
+import static com.neptunedreams.vulcan.settings.Commands.TestPurchase.*;
 
 /**
  * Commands appear on the overflow menu (or, conceivably, on the side menu). Their appearance is controlled by the
@@ -53,6 +51,7 @@ import static com.neptunedreams.vulcan.settings.Commands.TestPurchase.purchase;
  *
  * @author Miguel Mu\u00f1oz
  */
+@SuppressWarnings({"HardCodedStringLiteral"})
 public final class Commands {
 
 	private Commands() { }
@@ -134,7 +133,6 @@ public final class Commands {
 	 * Adds a "prepareTask" that gets run by all commands before they execute.
 	 * @param prepareTask The prepare task
 	 */
-	@SuppressWarnings("unused")
 	public static void addPrepareTask(@NotNull Runnable prepareTask) {
 		prepareList.add(prepareTask);
 	}
@@ -166,7 +164,6 @@ public final class Commands {
 	@SuppressWarnings("unused")
 	private static String getActualEncryptedProductId() {
 		final long id = Prefs.prefs.get(Prefs.INSTALLATION_ID, 0);
-		//noinspection StringConcatenation
 		String value = adFreeProductId + '.' + id;
 		int hashCode = value.hashCode();
 		return String.valueOf(hashCode);
@@ -299,12 +296,11 @@ public final class Commands {
 		byte[] byteBuf = new byte[size];
 		//noinspection TooBroadScope
 		StringBuilder builder = new StringBuilder();
-		//noinspection OverlyBroadCatchBlock
 		try (
 			InputStream i = getLicenseStream()
 		) {
 			while (count >= 0) {
-				builder.append(new String(byteBuf, 0, count, StandardCharsets.UTF_8));
+				builder.append(new String(byteBuf, 0, count, StandardCharsets.UTF_8)); // "UTF-8"
 				count = i.read(byteBuf, 0, size);
 			}
 			String licenseAgreement = builder.toString();
@@ -324,9 +320,21 @@ public final class Commands {
 	}
 
 	public static void privacy() {
-		String url = "https://www.iubenda.com/privacy-policy/7954283";
+//		String url = "https://www.iubenda.com/privacy-policy/7954283";
+		String privacyFile = "privacy.html";
+//		String privacyFile = "/com/neptunedreams/vulcan/settings/privacy.html";
+		InputStream inputStream = LevelOfVulcan.getTheme().getData(privacyFile);
+		String html;
+		try {
+			html = Util.readToString(inputStream);
+		} catch (IOException e) {
+			IllegalStateException illegalStateException = new IllegalStateException(e.getMessage());
+			//noinspection UnnecessaryInitCause
+			illegalStateException.initCause(e); // Codename1 doesn't have the constructor with the cause.
+			throw illegalStateException;
+		}
 		BrowserComponent browserComponent = new BrowserComponent();
-		browserComponent.setURL(url);
+		browserComponent.setPage(html, privacyFile);
 		
 		Form privacyForm = new Form("Vulcan's Level", new BorderLayout());
 		final Label title = new Label("Neptune Dreams Privacy Policy");
@@ -528,10 +536,7 @@ public final class Commands {
 					multiButton.setRadioButton(true);
 					return multiButton; 
 				},
-				(tc) -> {
-					//noinspection ConstantConditions
-					return TestPurchase.valueOf(tc.getTextLine1()); 
-				},
+				(tc) -> TestPurchase.valueOf(tc.getTextLine1()),
 				(v) -> Prefs.prefs.set(Prefs.AD_FREE, v == purchase)
 		);
 	}

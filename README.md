@@ -1,5 +1,5 @@
 ## Building
-For results, go to https://www.codenameone.com/build-server.html
+For results, go to  https://cloud.codenameone.com/buildapp/index.html
 
 ## Rebuilding
 Your certificates will expire, so you need to generate new ones.

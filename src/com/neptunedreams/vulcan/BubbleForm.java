@@ -41,9 +41,9 @@ import com.neptunedreams.util.NotNull;
 import com.neptunedreams.util.Nullable;
 
 import static com.codename1.sensors.SensorType3D.*;
-import static com.neptunedreams.vulcan.app.LevelOfVulcan.debug;
-import static com.neptunedreams.vulcan.calibrate.CalibrationData.View.*;
+import static com.neptunedreams.vulcan.app.LevelOfVulcan.*;
 import static com.neptunedreams.vulcan.calibrate.CalibrationData.Axis.*;
+import static com.neptunedreams.vulcan.calibrate.CalibrationData.View.*;
 
 /**
  * <p>Created by IntelliJ IDEA.
@@ -59,7 +59,13 @@ public class BubbleForm extends SensorForm
 		BubbleView.AngleChangedListener
 //		BubbleView.SizeChangedListener //, PurchaseCallback
 {
-//	public static final double RADIANS = Math.PI / 180.0;
+	private static final String LEFT_ARROW = "\u21E0";
+	private static final String RIGHT_ARROW = "\u21E2";
+	@SuppressWarnings("StringConcatenation")
+	private static final String INITIAL_TEXT = LEFT_ARROW + " -00.0000% " + RIGHT_ARROW;
+	private static final char SPACE = ' ';
+	private static final Component[] EMPTY_COMPONENT_ARRAY = new Component[0];
+	//	public static final double RADIANS = Math.PI / 180.0;
 //	private static final char DEGREE = '\u00B0'; // little circle
 //	public static final int screenWidth
 //			= (Display.getInstance().getDisplayWidth() > Display.getInstance().getDisplayHeight()) ?
@@ -68,13 +74,13 @@ public class BubbleForm extends SensorForm
 	@NotNull
 	private final BubbleView bubbleView;
 	@NotNull
-	private final Label xLabel = new Label("\u21E0 -00.0 \u21E2");
+	private final Label xLabel = new Label(INITIAL_TEXT);
 	@NotNull
-	private final RotatedLabel yLabel = new RotatedLabel("\u21E0 -00.0 \u21E2", false);
+	private final RotatedLabel yLabel = new RotatedLabel(INITIAL_TEXT, false);
 	@NotNull
-	private final RotatedLabel xInvLabel = new RotatedLabel("\u21E0 -00.0 \u21E2");
+	private final RotatedLabel xInvLabel = new RotatedLabel(INITIAL_TEXT);
 	@NotNull
-	private final RotatedLabel yInvLabel = new RotatedLabel("\u21E0 -00.0 \u21E2", true);
+	private final RotatedLabel yInvLabel = new RotatedLabel(INITIAL_TEXT, true);
 	@NotNull
 	private final Label calibratedStatusLabel;
 	@NotNull
@@ -84,11 +90,9 @@ public class BubbleForm extends SensorForm
 	@NotNull
 	private final Button calibrationButton;
 
-	private Image star = getStarIcon();
+	private final Image star = getStarIcon();
 
 	private final TextArea logField;
-	private final GridBagConstraints bubbleConstraints;
-//	private Container wrappedBubbleView;
 
 	public BubbleForm() {
 		super("Vulcan\u2019s Level", accelerometer);
@@ -103,7 +107,7 @@ public class BubbleForm extends SensorForm
 		
 		int currentRow = -1;
 
-		bubbleConstraints = new GridBagConstraints();
+		final GridBagConstraints bubbleConstraints = new GridBagConstraints();
 		bubbleConstraints.fill = GridBagConstraints.BOTH;
 		bubbleConstraints.weightx = 1.0;
 		bubbleConstraints.gridx = 0;
@@ -234,6 +238,7 @@ public class BubbleForm extends SensorForm
 		// Place it inside a component to give it a preferred size.
 		final Dimension prefSize = getPrefSize();
 //		Log.p("wrapView prefSize = " + prefSize);
+		//noinspection MethodDoesntCallSuperMethod
 		Container sizer = new Container(new BorderLayout()) {
 			@Override
 			protected Dimension calcPreferredSize() {
@@ -241,7 +246,6 @@ public class BubbleForm extends SensorForm
 			}
 		};
 		sizer.add(BorderLayout.CENTER, component);
-//		wrappedBubbleView = sizer;
 		return sizer;
 	}
 	
@@ -314,24 +318,6 @@ public class BubbleForm extends SensorForm
 		return screenDimensions;
 	} 
 
-//	void replaceWrappedView() {
-//		bubbleView.repaint();
-//		bubbleView.remove();
-//		xLabel.remove();
-//		yLabel.remove();
-//		;
-//		xInvLabel.remove();
-//		yInvLabel.remove();
-//		lockButton.remove();
-//		if (logButton != null) {
-//			logButton.remove();
-//		}
-//		wrappedBubbleView.removeAll();
-//		final Container oldWrappedView = wrappedBubbleView;
-//		replaceAndWait(oldWrappedView, wrapView(bubbleView), null, true);
-//		repaint();
-//	}
-	
 	@NotNull
 	private Component[] makeButtonLayers(final Component view) {
 		Component[] certainties = {
@@ -348,7 +334,7 @@ public class BubbleForm extends SensorForm
 			buttonList.add(FlowLayout.encloseRightBottom(logButton));
 		}
 		setZLabels(0.0, 0.0); // This is just for the iPhone starting image.
-		return buttonList.toArray(new Component[buttonList.size()]);
+		return buttonList.toArray(EMPTY_COMPONENT_ARRAY);
 	}
 
 	private static void formatLabel(@NotNull Label label, int bgColor) {
@@ -357,6 +343,8 @@ public class BubbleForm extends SensorForm
 		//noinspection MagicNumber
 		allStyles.setFgColor(0xffffff);
 		allStyles.setBgTransparency(0);
+		// For some reason, this doesn't work.
+		allStyles.setAlignment(RIGHT);
 	}
 
 	@Override
@@ -367,6 +355,7 @@ public class BubbleForm extends SensorForm
 
 	@Override
 	protected void initComponent() {
+		super.initComponent();
 //		Log.p("BubbleForm.initComponent()@" + hashCode());
 		Prefs.prefs.addPreferenceListener(Prefs.FLUID_HUE, this);
 		Prefs.prefs.addPreferenceListener(Prefs.getAxisKey(y, XAxis), this);
@@ -394,6 +383,7 @@ public class BubbleForm extends SensorForm
 
 	@Override
 	protected void deinitialize() {
+		super.deinitialize();
 //		Log.p("BubbleForm.deinitialize()" + '@' + hashCode());
 		Prefs.prefs.removePreferenceListener(Prefs.FLUID_HUE, this);
 		Prefs.prefs.removePreferenceListener(Prefs.getAxisKey(y, XAxis), this);
@@ -442,7 +432,7 @@ public class BubbleForm extends SensorForm
 				bubbleView.repaint();
 			}
 //		} else if (pref.equals(Prefs.getAxisKey(z, XAxis))) {
-		} else if (pref.indexOf(Prefs.AXIS_SUFFIX) >= 0) {
+		} else if (pref.contains(Prefs.AXIS_SUFFIX)) {
 //			Log.p("Changing Pref " + pref);
 			CalibrationData calibrationData = CalibrationData.getCalibrationDataForCurrentView();
 //			calibratedStatusLabel.setText(getCalibrationStatusText(calibrationData));
@@ -476,6 +466,9 @@ public class BubbleForm extends SensorForm
 		}
 	}
 
+	// This lets me replace the blank text for debugging purposes
+	private static final String blankText = "";
+	
 	private void setXAxisLabels(final char view, double yAngle) {
 		// X axis is vertical, so we set the y labels
 //		double angle = -MathUtil.atan(vector.getY() / vector.getX()) / RADIANS;
@@ -485,12 +478,12 @@ public class BubbleForm extends SensorForm
 		final String yFmt = units.format(yAngle);
 		if (view == 'x') {
 			yText = yFmt;
-			yInvText = "";
+			yInvText = blankText;
 		} else {
-			yText = "";
+			yText = blankText;
 			yInvText = yFmt;
 		}
-		setAllLabels("", yText, "", yInvText);
+		setAllLabels(blankText, yText, blankText, yInvText);
 	}
 
 	private void setYAxisLabels(char view, double xAngle) {
@@ -501,22 +494,22 @@ public class BubbleForm extends SensorForm
 		Units units = Units.getPreferredUnits();
 		if (view == 'y') {
 			xText = units.format(xAngle);
-			xInvText = "";
+			xInvText = blankText;
 		} else {
-			xText = "";
+			xText = blankText;
 			xInvText = units.format(xAngle);
 		}
-		setAllLabels(xText, "", xInvText, "");
+		setAllLabels(xText, blankText, xInvText, blankText);
 	}
 
 	private void setZLabels(double xAngle, double yAngle) {
 		Units units = Units.getPreferredUnits();
 		//noinspection StringConcatenation
 		setAllLabels(
-				"\u21E0 " + units.format(xAngle) + " \u21E2", 
-				"\u21E0 " + units.format(yAngle) + " \u21E2",
-				"",
-				""
+				LEFT_ARROW + SPACE + units.format(xAngle) + SPACE + RIGHT_ARROW, 
+				LEFT_ARROW + SPACE + units.format(yAngle) + SPACE + RIGHT_ARROW,
+				blankText,
+				blankText
 		);
 	}
 
@@ -586,6 +579,7 @@ public class BubbleForm extends SensorForm
 		return new Button() {
 				@Override
 				public void longPointerPress(final int x, final int y) {
+					super.longPointerPress(x, y);
 					ToastBar.showErrorMessage(msg);
 				}
 			};
@@ -614,7 +608,6 @@ public class BubbleForm extends SensorForm
 		//noinspection StringConcatenation
 		calibrationButton.setText(getViewName(viewUp) + "-Axis Calibration Wizard");
 //		Log.p(calibrationButton.getText() + " from " + view + " (" + getCurrentView() + ')');
-		//noinspection ConstantConditions
 		Assert.doAssert(getCurrentView().toString().equalsIgnoreCase(String.valueOf(view)), "Mismatch: " + view + " != " + getCurrentView());
 		adjustCalibrationStatusDisplay(getCurrentView().getCalibrationData());
 //		calibratedStatusLabel.setText(getCalibrationStatusText(getCurrentView().getCalibrationData()));
@@ -731,6 +724,40 @@ public class BubbleForm extends SensorForm
 			if (scr != null) {
 				logField.scrollRectToVisible(0, scr.getHeight()-1, 1, 1, null);
 			}
+		}
+	}
+
+	/**
+	 * Whenever we pop up a menu or a dialog, it calls layoutContainer. This resizes all my labels, based on the current
+	 * text, which I don't want it to do, because it makes many of them too small to display whatever the text changes to.
+	 * So, I save the current text for all the labels, set the text to INITIAL_TEXT, which is the right size. Then I let
+	 * it lay out the container. Then I restore the actual text.
+	 * 
+	 * To complicate matters further, this method gets called in the constructor. This means it gets called before I
+	 * have initialized any of the labels, even though they're private final members. So I need to test a label for
+	 * null before doing this, resulting in a warning that the null label isn't supposed to be null. 
+	 */
+	@Override
+	public void layoutContainer() {
+		//noinspection ConstantConditions
+		if (xLabel != null) {
+			String xText = xLabel.getText();
+			String yText = yLabel.getText();
+			String xInvText = xInvLabel.getText();
+			String yInvText = yInvLabel.getText();
+			xLabel.setText(INITIAL_TEXT);
+			xInvLabel.setText(INITIAL_TEXT);
+			yLabel.setText(INITIAL_TEXT);
+			yInvLabel.setText(INITIAL_TEXT);
+
+			super.layoutContainer();
+
+			xLabel.setText(xText);
+			yLabel.setText(yText);
+			xInvLabel.setText(xInvText);
+			yInvLabel.setText(yInvText);
+		} else {
+			super.layoutContainer();
 		}
 	}
 }

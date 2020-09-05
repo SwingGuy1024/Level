@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<resource majorVersion="1" minorVersion="7" useXmlUI="false">
+<resource majorVersion="1" minorVersion="11" useXmlUI="false">
     <image name="back-command.png" type="multi"  />
     <image name="back-command.png1" type="multi"  />
     <image name="border.png"  />
@@ -133,6 +133,7 @@
     <image name="OKGR.borderTopR_1.png" type="multi"  />
     <image name="OKGR.borderTopR_1.png1" type="multi"  />
     <image name="on.png" type="multi"  />
+    <data name="privacy.html" />
     <image name="RadioButtonSelected.png 1" type="multi"  />
     <image name="RadioButtonUnselected.png 1" type="multi"  />
     <image name="round.png" type="multi"  />
@@ -208,49 +209,49 @@
         <border key="Button.dis#border" type="image" i1="Button.borderTop_1.png" i2="Button.borderBottom_1.png" i3="Button.borderLeft_1.png" i4="Button.borderRight_1.png" i5="Button.borderTopL_1.png" i6="Button.borderTopR_1.png" i7="Button.borderBottomL_1.png" i8="Button.borderBottomR_1.png" i9="Button.borderCenter_1.png" />
         <val key="Button.dis#fgColor" value="7f7f7f" />
         <val key="Button.dis#padUnit" value="0,2,0,2" />
-        <val key="Button.dis#padding" value="0,0,2,2" />
+        <val key="Button.dis#padding" value="0.0,0.0,2.0,2.0" />
         <val key="Button.dis#transparency" value="0" />
         <val key="Button.fgColor" value="ffffff" />
         <val key="Button.padUnit" value="0,2,0,2" />
-        <val key="Button.padding" value="0,0,2,2" />
+        <val key="Button.padding" value="0.0,0.0,2.0,2.0" />
         <val key="Button.press#align" value="4" />
         <border key="Button.press#border" type="image" i1="Button.borderTop_1.png" i2="Button.borderBottom_1.png" i3="Button.borderLeft_1.png" i4="Button.borderRight_1.png" i5="Button.borderTopL_1.png" i6="Button.borderTopR_1.png" i7="Button.borderBottomL_1.png" i8="Button.borderBottomR_1.png" i9="Button.borderCenter_1.png" />
         <val key="Button.press#fgColor" value="ffffff" />
         <val key="Button.press#padUnit" value="0,2,0,2" />
-        <val key="Button.press#padding" value="0,0,2,2" />
+        <val key="Button.press#padding" value="0.0,0.0,2.0,2.0" />
         <val key="Button.press#transparency" value="0" />
         <val key="Button.sel#align" value="4" />
         <border key="Button.sel#border" type="image" i1="Button.borderTop_1.png" i2="Button.borderBottom_1.png" i3="Button.borderLeft_1.png" i4="Button.borderRight_1.png" i5="Button.borderTopL_1.png" i6="Button.borderTopR_1.png" i7="Button.borderBottomL_1.png" i8="Button.borderBottomR_1.png" i9="Button.borderCenter_1.png" />
         <val key="Button.sel#fgColor" value="ffffff" />
         <val key="Button.sel#padUnit" value="0,2,0,2" />
-        <val key="Button.sel#padding" value="0,0,2,2" />
+        <val key="Button.sel#padding" value="0.0,0.0,2.0,2.0" />
         <val key="Button.sel#transparency" value="0" />
         <val key="Button.transparency" value="0" />
-        <val key="Command.bgColor" value="000000" />
+        <val key="Command.bgColor" value="0" />
         <val key="Command.fgColor" value="ffffff" />
         <val key="Command.marUnit" value="2,2,2,0" />
-        <val key="Command.margin" value="0,0,1,0" />
+        <val key="Command.margin" value="0.0,0.0,1.0,0.0" />
         <val key="Command.padUnit" value="2,2,2,0" />
-        <val key="Command.padding" value="2,2,0,0" />
+        <val key="Command.padding" value="2.0,2.0,0.0,0.0" />
         <val key="Command.press#bgColor" value="666666" />
         <val key="Command.press#fgColor" value="0" />
         <val key="Command.press#marUnit" value="2,2,2,0" />
-        <val key="Command.press#margin" value="0,0,1,0" />
+        <val key="Command.press#margin" value="0.0,0.0,1.0,0.0" />
         <val key="Command.press#padUnit" value="2,2,2,0" />
-        <val key="Command.press#padding" value="2,2,0,0" />
+        <val key="Command.press#padding" value="2.0,2.0,0.0,0.0" />
         <val key="Command.press#transparency" value="64" />
         <val key="Command.sel#bgColor" value="cccccc" />
         <val key="Command.sel#fgColor" value="0" />
         <val key="Command.sel#marUnit" value="2,2,2,0" />
-        <val key="Command.sel#margin" value="0,0,1,0" />
+        <val key="Command.sel#margin" value="0.0,0.0,1.0,0.0" />
         <val key="Command.sel#padUnit" value="2,2,2,0" />
-        <val key="Command.sel#padding" value="2,2,0,0" />
+        <val key="Command.sel#padding" value="2.0,2.0,0.0,0.0" />
         <val key="Command.sel#transparency" value="255" />
         <val key="Command.transparency" value="255" />
         <val key="CommandFocus.marUnit" value="0,2,0,0" />
-        <val key="CommandFocus.margin" value="0,0,1,0" />
+        <val key="CommandFocus.margin" value="0.0,0.0,1.0,0.0" />
         <val key="CommandFocus.padUnit" value="2,0,2,0" />
-        <val key="CommandFocus.padding" value="1,1,0,0" />
+        <val key="CommandFocus.padding" value="1.0,1.0,0.0,0.0" />
         <val key="CommandFocus.transparency" value="0" />
         <val key="CommandList.bgColor" value="333333" />
         <val key="CommandList.fgColor" value="ffffff" />
@@ -278,23 +279,23 @@
         <val key="Label.transparency" value="0" />
         <val key="LovLock.dis#fgColor" value="7f7f7f" />
         <val key="LovLock.dis#marUnit" value="2,2,2,2" />
-        <val key="LovLock.dis#margin" value="3,3,3,3" />
+        <val key="LovLock.dis#margin" value="3.0,3.0,3.0,3.0" />
         <val key="LovLock.dis#transparency" value="0" />
         <val key="LovLock.fgColor" value="ffffff" />
         <val key="LovLock.marUnit" value="2,2,2,2" />
-        <val key="LovLock.margin" value="3,3,3,3" />
+        <val key="LovLock.margin" value="3.0,3.0,3.0,3.0" />
         <val key="LovLock.press#bgColor" value="ffffff" />
         <val key="LovLock.press#fgColor" value="0" />
         <val key="LovLock.press#marUnit" value="2,2,2,2" />
-        <val key="LovLock.press#margin" value="3,3,3,3" />
+        <val key="LovLock.press#margin" value="3.0,3.0,3.0,3.0" />
         <val key="LovLock.press#transparency" value="0" />
         <val key="LovLock.sel#bgColor" value="5f5f5f" />
         <val key="LovLock.sel#fgColor" value="ffffff" />
         <val key="LovLock.sel#marUnit" value="2,2,2,2" />
-        <val key="LovLock.sel#margin" value="3,3,3,3" />
+        <val key="LovLock.sel#margin" value="3.0,3.0,3.0,3.0" />
         <val key="LovLock.sel#transparency" value="0" />
         <val key="LovLock.transparency" value="0" />
-        <val key="MultiButton.bgColor" value="000000" />
+        <val key="MultiButton.bgColor" value="0" />
         <val key="MultiButton.press#bgColor" value="444444" />
         <val key="MultiButton.press#fgColor" value="ffffff" />
         <font key="MultiButton.press#font" type="system" face="0" style="0" size="8" />
@@ -303,59 +304,59 @@
         <val key="MultiButton.sel#fgColor" value="ffffff" />
         <font key="MultiButton.sel#font" type="system" face="0" style="0" size="8" />
         <val key="MultiButton.transparency" value="255" />
-        <val key="MultiLine1.bgColor" value="000000" />
+        <val key="MultiLine1.bgColor" value="0" />
         <val key="MultiLine1.fgColor" value="ffffff" />
         <val key="MultiLine1.press#bgColor" value="444444" />
         <val key="MultiLine1.press#fgColor" value="ffffff" />
         <val key="MultiLine1.sel#bgColor" value="0" />
         <val key="MultiLine1.sel#fgColor" value="ffffff" />
-        <val key="MultiLine2.bgColor" value="000000" />
+        <val key="MultiLine2.bgColor" value="0" />
         <val key="MultiLine2.fgColor" value="ffffff" />
         <font key="MultiLine2.font" type="system" face="0" style="0" size="8" />
         <val key="MultiLine2.marUnit" value="2,2,0,2" />
-        <val key="MultiLine2.margin" value="0,0,2,2" />
-        <val key="MultiLine2.padding" value="0,0,0,0" />
+        <val key="MultiLine2.margin" value="0.0,0.0,2.0,2.0" />
+        <val key="MultiLine2.padding" value="0.0,0.0,0.0,0.0" />
         <val key="MultiLine2.press#bgColor" value="444444" />
         <val key="MultiLine2.press#fgColor" value="ffffff" />
         <font key="MultiLine2.press#font" type="system" face="0" style="0" size="8" />
         <val key="MultiLine2.press#marUnit" value="0,2,0,2" />
-        <val key="MultiLine2.press#margin" value="0,0,2,2" />
-        <val key="MultiLine2.press#padding" value="0,0,0,0" />
+        <val key="MultiLine2.press#margin" value="0.0,0.0,2.0,2.0" />
+        <val key="MultiLine2.press#padding" value="0.0,0.0,0.0,0.0" />
         <val key="MultiLine2.press#textDecoration" value="0" />
-        <val key="MultiLine2.sel#bgColor" value="000000" />
+        <val key="MultiLine2.sel#bgColor" value="0" />
         <val key="MultiLine2.sel#fgColor" value="ffffff" />
         <font key="MultiLine2.sel#font" type="system" face="0" style="0" size="8" />
         <val key="MultiLine2.sel#marUnit" value="0,2,0,2" />
-        <val key="MultiLine2.sel#margin" value="0,0,2,2" />
-        <val key="MultiLine2.sel#padding" value="0,0,0,0" />
+        <val key="MultiLine2.sel#margin" value="0.0,0.0,2.0,2.0" />
+        <val key="MultiLine2.sel#padding" value="0.0,0.0,0.0,0.0" />
         <val key="MultiLine2.sel#textDecoration" value="0" />
-        <val key="MultiLine3.bgColor" value="000000" />
+        <val key="MultiLine3.bgColor" value="0" />
         <val key="MultiLine3.fgColor" value="ffffff" />
         <font key="MultiLine3.font" type="system" face="0" style="0" size="8" />
         <val key="MultiLine3.marUnit" value="0,2,0,2" />
-        <val key="MultiLine3.margin" value="0,0,2,2" />
-        <val key="MultiLine3.padding" value="0,0,0,0" />
+        <val key="MultiLine3.margin" value="0.0,0.0,2.0,2.0" />
+        <val key="MultiLine3.padding" value="0.0,0.0,0.0,0.0" />
         <val key="MultiLine3.press#bgColor" value="444444" />
         <val key="MultiLine3.press#fgColor" value="ffffff" />
         <font key="MultiLine3.press#font" type="system" face="0" style="0" size="8" />
         <val key="MultiLine3.press#marUnit" value="0,2,0,2" />
-        <val key="MultiLine3.press#margin" value="0,0,2,2" />
-        <val key="MultiLine3.press#padding" value="0,0,0,0" />
-        <val key="MultiLine3.sel#bgColor" value="000000" />
+        <val key="MultiLine3.press#margin" value="0.0,0.0,2.0,2.0" />
+        <val key="MultiLine3.press#padding" value="0.0,0.0,0.0,0.0" />
+        <val key="MultiLine3.sel#bgColor" value="0" />
         <val key="MultiLine3.sel#fgColor" value="ffffff" />
         <font key="MultiLine3.sel#font" type="system" face="0" style="0" size="8" />
         <val key="MultiLine3.sel#marUnit" value="0,2,0,2" />
-        <val key="MultiLine3.sel#margin" value="0,0,2,2" />
-        <val key="MultiLine3.sel#padding" value="0,0,0,0" />
+        <val key="MultiLine3.sel#margin" value="0.0,0.0,2.0,2.0" />
+        <val key="MultiLine3.sel#padding" value="0.0,0.0,0.0,0.0" />
         <border key="Slider.border" type="imageH" i1="Slider.borderLeft_1.png" i2="Slider.borderRight_1.png" i3="Slider.borderCenter_1.png" />
         <val key="Slider.transparency" value="0" />
         <border key="SliderFull.border" type="imageH" i1="SliderFull.borderLeft_1.png" i2="SliderFull.borderRight_1.png" i3="SliderFull.borderCenter_1.png" />
         <val key="SliderFull.transparency" value="0" />
         <val key="Title.fgColor" value="ffffff" />
         <font key="Title.font" type="system" face="0" style="0" size="16" />
-        <val key="Title.margin" value="0,0,0,0" />
+        <val key="Title.margin" value="0.0,0.0,0.0,0.0" />
         <val key="Title.padUnit" value="2,2,2,2" />
-        <val key="Title.padding" value="1,1,1,1" />
+        <val key="Title.padding" value="1.0,1.0,1.0,1.0" />
         <val key="Title.textDecoration" value="8" />
         <val key="Title.transparency" value="0" />
         <val key="TitleArea.align" value="4" />
@@ -366,21 +367,21 @@
         <val key="TitleCommand.bgColor" value="0" />
         <border key="TitleCommand.border" type="empty" />
         <val key="TitleCommand.fgColor" value="ffffff" />
-        <val key="TitleCommand.margin" value="0,0,0,0" />
+        <val key="TitleCommand.margin" value="0.0,0.0,0.0,0.0" />
         <val key="TitleCommand.padUnit" value="2,2,2,2" />
-        <val key="TitleCommand.padding" value="1,1,1,1" />
+        <val key="TitleCommand.padding" value="1.0,1.0,1.0,1.0" />
         <border key="TitleCommand.press#border" type="empty" />
         <val key="TitleCommand.press#fgColor" value="bbbbbb" />
-        <val key="TitleCommand.press#margin" value="0,0,0,0" />
+        <val key="TitleCommand.press#margin" value="0.0,0.0,0.0,0.0" />
         <val key="TitleCommand.press#padUnit" value="2,2,2,2" />
-        <val key="TitleCommand.press#padding" value="1,1,1,1" />
+        <val key="TitleCommand.press#padding" value="1.0,1.0,1.0,1.0" />
         <val key="TitleCommand.press#transparency" value="0" />
         <val key="TitleCommand.transparency" value="0" />
         <font key="ToastBarMessage.font" type="system" face="0" style="0" size="0" />
         <font key="UnitText.font" type="system" face="0" style="0" size="8" />
         <val key="UnitText.marUnit" value="0,2,0,0" />
-        <val key="UnitText.margin" value="0,0,2,2" />
-        <val key="UnitText.padding" value="0,0,0,0" />
+        <val key="UnitText.margin" value="0.0,0.0,2.0,2.0" />
+        <val key="UnitText.padding" value="0.0,0.0,0.0,0.0" />
         <val key="UnitText.textDecoration" value="0" />
     </theme>
     <image name="TitleArea.borderBottom_1.png" type="multi"  />

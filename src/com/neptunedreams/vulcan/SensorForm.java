@@ -11,7 +11,6 @@ import com.codename1.ui.layouts.Layout;
 import com.neptunedreams.vulcan.math.Vector3D;
 import com.neptunedreams.util.NotNull;
 import com.neptunedreams.util.Nullable;
-import org.jetbrains.annotations.Contract;
 
 /**
  * <p>Created by IntelliJ IDEA.
@@ -23,9 +22,9 @@ import org.jetbrains.annotations.Contract;
 public class SensorForm extends Form implements SensorBroadcaster {
 	@NotNull
 //	private SensorsManager sManager;
-	private Hashtable<SensorType3D, SensorsManager> managerMap = new Hashtable<>();
+	private final Hashtable<SensorType3D, SensorsManager> managerMap = new Hashtable<>();
 	@NotNull
-	private Hashtable<SensorType3D, SensorListener> listenerMap = new Hashtable<>();
+	private final Hashtable<SensorType3D, SensorListener> listenerMap = new Hashtable<>();
 //	private SensorListener sensorListener = makeSensorListener();
 	private boolean sensorOn = false;
 	
@@ -63,7 +62,7 @@ public class SensorForm extends Form implements SensorBroadcaster {
 		return observers;
 	}
 
-	@Contract("null->fail")
+//	@Contract("null->fail")
 	@NotNull
 	protected SensorsManager installListener(@NotNull SensorType3D type) {
 		SensorsManager manager = SensorsManager.getSenorsManager(type);

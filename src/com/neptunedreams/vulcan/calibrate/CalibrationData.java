@@ -1,6 +1,5 @@
 package com.neptunedreams.vulcan.calibrate;
 
-import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.Map;
 import com.codename1.io.Log;
@@ -38,20 +37,20 @@ public final class CalibrationData {
 	//	private static final double RADIANS = Math.PI / 180.0;
 	private Vector3D gravityVector;
 	//	private Vector3D secondVector;
+	@Nullable
 	private Vector3D calibration;
 	private boolean isCalibrated = false;
 	private UITimer sliderTimer = null;
-	private Vector3D correctionVector; // Ditch?
 	@NotNull
 	private static final Vector3D X_VECTOR = new Vector3D(1.0, 0.0, 0.0).normalize();
 	@NotNull
 	private static final Vector3D Y_VECTOR = new Vector3D(0.0, 1.0, 0.0).normalize();
 	@NotNull
 	private static final Vector3D Z_VECTOR = new Vector3D(0.0, 0.0, 1.0).normalize();
-	//	private Vector3D correctionVector;
-	private double[] correctionMatrix = {1.0, 0, 0, 0, 1.0, 0, 0, 0, 1.0};
+	private final double[] unitVector = { 1.0, 0, 0, 0, 1.0, 0, 0, 0, 1.0 };
+	private double[] correctionMatrix = unitVector;
 	@NotNull
-	private static final Map<View, CalibrationData> calibrationMap = new EnumMap<>(View.class);
+	private static final Map<View, CalibrationData> calibrationMap = new HashMap<>();
 
 	@NotNull
 	private final Statistics3D stats = new Statistics3D();
@@ -103,7 +102,6 @@ public final class CalibrationData {
 		// We lazily instantiate these because it crashes in the simulator otherwise. This is only done on the EDT, 
 		// so it's safe.
 		if (data == null) {
-			//noinspection ConstantConditions
 			for (View initView : View.values()) {
 				calibrationMap.put(initView, new CalibrationData(initView));
 			}
@@ -213,7 +211,7 @@ public final class CalibrationData {
 
 	private void calibrateZ(@NotNull CalibrationData other) {
 		Assert.doAssert(view == View.z, "Mismatch: z != " + view);
-		//noinspection ObjectToString
+		//no inspection ObjectToString
 //		Log.p("Calibrating from " + this + " using " + other);
 		Vector3D secondVector = other.gravityVector;
 		dbgOtherVector = secondVector;
@@ -267,12 +265,6 @@ public final class CalibrationData {
 		return correct(Z_VECTOR);
 	}
 
-	@NotNull
-	public Vector3D getOldCorrectionVector() {
-		assert correctionVector != null;
-		return correctionVector;
-	}
-
 	@Nullable
 	public Vector3D getDbgVector() {
 		return gravityVector;
@@ -299,21 +291,6 @@ public final class CalibrationData {
 		Vector3D rotationAxis = normalVector.cross(calibration).normalize();
 //		Log.p("RotationAxis: " + rotationAxis);
 		correctionMatrix = rotationAxis.rotate(angle);
-//		correctionVector = calibration.subtract(normalVector);
-//		Log.p("Revised Correction Matrix: " + java.util.Arrays.toString(correctionMatrix));
-
-		// correctionVector is the old way of doing things, and may be removed. It's here only for comparison.
-		correctionVector = calibration.subtract(normalVector);
-//		Log.p("Revised Correction Vector: " + correctionVector);
-	}
-
-	@NotNull
-	public Vector3D oldCorrect(@NotNull Vector3D uncorrectedValue) {
-		if (!isCalibrated) {
-			return uncorrectedValue;
-		}
-		Assert.doAssert(correctionVector != null);
-		return uncorrectedValue.subtract(correctionVector);
 	}
 
 	@NotNull
@@ -321,15 +298,9 @@ public final class CalibrationData {
 		if (!isCalibrated) {
 			return uncorrectedValue;
 		}
-		Assert.doAssert(correctionMatrix != null);
 
 		//noinspection UnnecessaryLocalVariable
 		final Vector3D correctedValue = uncorrectedValue.productWith(correctionMatrix);
-//		Log.p("Corrected " + uncorrectedValue + " to " + correctedValue);
-//		if (!correctionVector.equals(priorCorrection)) {
-//			Log.p("Correction: from " + uncorrectedValue + " to " + correctedValue + " using " + correctionVector);
-//			priorCorrection = correctionVector;
-//		}
 		return correctedValue;
 	}
 
@@ -390,7 +361,7 @@ public final class CalibrationData {
 	public void clearCalibration() {
 		calibration = null;
 		isCalibrated = false;
-		correctionMatrix = null;
+		correctionMatrix = unitVector;
 		Prefs.prefs.set(Prefs.getAxisKey(view, Axis.XAxis), 0.0);
 		Prefs.prefs.set(Prefs.getAxisKey(view, Axis.YAxis), 0.0);
 		Prefs.prefs.set(Prefs.getAxisKey(view, Axis.ZAxis), 0.0);

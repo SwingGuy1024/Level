@@ -147,7 +147,6 @@ public final class Vector3D {
 		e[7] = (yz * nc) - xs;
 		e[8] = (z * z * nc) + c;
 		for (double v : e) {
-			//noinspection StringConcatenationInLoop
 			Assert.doAssert(!Double.isNaN(v), "Nan for theta = " + theta + '\n' + Arrays.toString(e));
 		}
 		return e;
@@ -192,6 +191,10 @@ public final class Vector3D {
 		return (data[0] == 0) && (data[1] == 0) && (data[2] == 0);
 	}
 
+	/**
+	 * Return a vector in the same direction as this vector, but with an absolute value of 1.0.
+	 * @return A normalized vector.
+	 */
 	@NotNull
 	public Vector3D normalize() {
 		if (isNormal) {

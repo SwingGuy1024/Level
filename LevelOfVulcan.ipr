@@ -74,7 +74,7 @@
         <option name="myCheckHtmlTags" value="true" />
         <option name="myCheckHtmlAttributes" value="true" />
       </inspection_tool>
-      <inspection_tool class="HardCodedStringLiteral" enabled="true" level="WARNING" enabled_by_default="true">
+      <inspection_tool class="HardCodedStringLiteral" enabled="false" level="WARNING" enabled_by_default="false">
         <option name="ignoreForAssertStatements" value="true" />
         <option name="ignoreForExceptionConstructors" value="true" />
         <option name="ignoreForSpecifiedExceptionConstructors" value="" />
@@ -86,10 +86,6 @@
         <option name="ignoreToString" value="false" />
         <option name="nonNlsCommentPattern" value="NON-NLS" />
       </inspection_tool>
-      <inspection_tool class="HardcodedFileSeparators" enabled="true" level="WARNING" enabled_by_default="true">
-        <option name="m_recognizeExampleMediaType" value="false" />
-      </inspection_tool>
-      <inspection_tool class="HardcodedLineSeparators" enabled="true" level="WARNING" enabled_by_default="true" />
       <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
         <option name="myValues">
           <value>
@@ -121,9 +117,7 @@
         <option name="m_ignoreInvisibleFields" value="true" />
         <option name="m_ignoreStaticMethods" value="true" />
       </inspection_tool>
-      <inspection_tool class="MagicCharacter" enabled="true" level="WARNING" enabled_by_default="true" />
       <inspection_tool class="MagicNumber" enabled="true" level="WARNING" enabled_by_default="true" />
-      <inspection_tool class="MapReplaceableByEnumMap" enabled="true" level="WARNING" enabled_by_default="true" />
       <inspection_tool class="MethodOnlyUsedFromInnerClass" enabled="true" level="WARNING" enabled_by_default="true">
         <option name="ignoreMethodsAccessedFromAnonymousClass" value="true" />
         <option name="ignoreStaticMethodsFromNonStaticInnerClass" value="false" />
@@ -160,7 +154,8 @@
       </inspection_tool>
       <inspection_tool class="RandomDoubleForRandomInteger" enabled="true" level="WARNING" enabled_by_default="true" />
       <inspection_tool class="RefusedBequest" enabled="true" level="WARNING" enabled_by_default="true">
-        <option name="ignoreEmptySuperMethods" value="false" />
+        <option name="ignoreEmptySuperMethods" value="true" />
+        <option name="ignoreDefaultSuperMethods" value="true" />
       </inspection_tool>
       <inspection_tool class="ReplaceAssignmentWithOperatorAssignment" enabled="true" level="WARNING" enabled_by_default="true">
         <option name="ignoreLazyOperators" value="true" />
@@ -179,15 +174,6 @@
       <inspection_tool class="SizeReplaceableByIsEmpty" enabled="true" level="WARNING" enabled_by_default="true" />
       <inspection_tool class="SleepWhileHoldingLock" enabled="true" level="WARNING" enabled_by_default="true" />
       <inspection_tool class="StringBufferToStringInConcatenation" enabled="true" level="WARNING" enabled_by_default="true" />
-      <inspection_tool class="StringConcatenation" enabled="true" level="WARNING" enabled_by_default="true">
-        <option name="ignoreAsserts" value="false" />
-        <option name="ignoreSystemOuts" value="false" />
-        <option name="ignoreSystemErrs" value="false" />
-        <option name="ignoreThrowableArguments" value="false" />
-        <option name="ignoreConstantInitializers" value="false" />
-        <option name="ignoreInTestCode" value="false" />
-        <option name="ignoreInToString" value="false" />
-      </inspection_tool>
       <inspection_tool class="StringEqualsEmptyString" enabled="true" level="WARNING" enabled_by_default="true" />
       <inspection_tool class="StringReplaceableByStringBuffer" enabled="true" level="WARNING" enabled_by_default="true">
         <option name="onlyWarnOnLoop" value="true" />
@@ -231,6 +217,18 @@
         <option name="ignoreNonEmtpyLoops" value="false" />
       </inspection_tool>
       <inspection_tool class="ZeroLengthArrayInitialization" enabled="true" level="WARNING" enabled_by_default="true" />
+      <inspection_tool class="unused" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+        <option name="LOCAL_VARIABLE" value="true" />
+        <option name="FIELD" value="true" />
+        <option name="METHOD" value="true" />
+        <option name="CLASS" value="true" />
+        <option name="PARAMETER" value="true" />
+        <option name="REPORT_PARAMETER_FOR_PUBLIC_METHODS" value="true" />
+        <option name="ADD_MAINS_TO_ENTRIES" value="true" />
+        <option name="ADD_APPLET_TO_ENTRIES" value="true" />
+        <option name="ADD_SERVLET_TO_ENTRIES" value="true" />
+        <option name="ADD_NONJAVA_TO_ENTRIES" value="true" />
+      </inspection_tool>
     </profile>
     <version value="1.0" />
   </component>
